@@ -46,7 +46,7 @@ public class DAO : IDAO
 	{
 		FilterDefinition<User> userFilter = Builders<User>.Filter.Eq(user => user._id, value: id);
 
-		return userCollection.Find<User>(userFilter).First();
+		return userCollection.Find<User>(userFilter).FirstOrDefault();
 	}
 
 	public void postUsers(List<User> users)

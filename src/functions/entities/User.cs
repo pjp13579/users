@@ -1,40 +1,11 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
 
 namespace PP23771.Entities
 {
-	public class Address
-	{
-		public string city { get; set; }
-		public string street_name { get; set; }
-		public string street_address { get; set; }
-		public string zip_code { get; set; }
-		public string state { get; set; }
-		public string country { get; set; }
-		public Coordinates coordinates { get; set; }
-	}
-
-	public class Coordinates
-	{
-		public double lat { get; set; }
-		public double lng { get; set; }
-	}
-
-	public class CreditCard
-	{
-		public string cc_number { get; set; }
-	}
-
-	public class Employment
-	{
-		public string title { get; set; }
-		public string key_skill { get; set; }
-	}
-
 	public class User
 	{
+
 		[BsonId]
 		[BsonElement("_id")]
 		public ObjectId _id { get; set; }
@@ -53,13 +24,41 @@ namespace PP23771.Entities
 		public Address address { get; set; }
 		public CreditCard credit_card { get; set; }
 		public Subscription subscription { get; set; }
-	}
+		
+		public class Address
+		{
+			public string city { get; set; }
+			public string street_name { get; set; }
+			public string street_address { get; set; }
+			public string zip_code { get; set; }
+			public string state { get; set; }
+			public string country { get; set; }
+			public Coordinates coordinates { get; set; }
+		}
 
-	public class Subscription
-	{
-		public string plan { get; set; }
-		public string status { get; set; }
-		public string payment_method { get; set; }
-		public string term { get; set; }
+		public class Coordinates
+		{
+			public double lat { get; set; }
+			public double lng { get; set; }
+		}
+
+		public class CreditCard
+		{
+			public string cc_number { get; set; }
+		}
+
+		public class Employment
+		{
+			public string title { get; set; }
+			public string key_skill { get; set; }
+		}
+
+		public class Subscription
+		{
+			public string plan { get; set; }
+			public string status { get; set; }
+			public string payment_method { get; set; }
+			public string term { get; set; }
+		}
 	}
 }

@@ -3,7 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace PP23771.DTO;
 
-public class ViewUserDTO
+public class ViewCompleteUserDTO
 {
 	[BsonId]
 	[BsonElement("_id")]
@@ -16,9 +16,11 @@ public class ViewUserDTO
 	public string avatar { get; set; }
 	public string gender { get; set; }
 	public string phone_number { get; set; }
+	public string social_insurance_number { get; set; }
 	public string date_of_birth { get; set; }
 	public Employment employment { get; set; }
 	public Address address { get; set; }
+	public CreditCard credit_card { get; set; }
 	public Subscription subscription { get; set; }
 
 	public class Address
@@ -38,6 +40,10 @@ public class ViewUserDTO
 		public double lng { get; set; }
 	}
 
+	public class CreditCard
+	{
+		public string cc_number { get; set; }
+	}
 
 	public class Employment
 	{
@@ -45,10 +51,14 @@ public class ViewUserDTO
 		public string key_skill { get; set; }
 	}
 
+
+
+
 	public class Subscription
 	{
 		public string plan { get; set; }
 		public string status { get; set; }
+		public string payment_method { get; set; }
 		public string term { get; set; }
 	}
 }
