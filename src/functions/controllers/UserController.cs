@@ -87,7 +87,6 @@ namespace PP23771.UserController
 			{
 				return new BadRequestObjectResult(e.Message);
 			}
-
 		}
 
 		[FunctionName("DeleteUsers")]

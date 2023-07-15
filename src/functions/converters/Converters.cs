@@ -28,6 +28,7 @@ public class Converter : IConverter
 
 			user._id = new MongoDB.Bson.ObjectId();
 			user.uid = createUser.uid;
+			//dual encryption. Password should already come encrypted from the frontend
 			using (SHA256 sha256 = SHA256.Create())
 			{
 				byte[] passwordBytes = Encoding.UTF8.GetBytes(createUser.password);
