@@ -9,7 +9,7 @@ After this, to run the application in VSCode: <br />
 &emsp;-execute the command "func start" to run the application <p></p>
 	<p></p>
 
-There is an instance of this application deployed in Azure. These are the endpoints:<br />
+There is an instance of this application deployed in Azure. These are the web-api endpoints:<br />
 &emsp;-<a href="https://users23771.azurewebsites.net/api/getuserbyid/{id}">https://functionapp23771.azurewebsites.net/api/getuserbyid/{id}</a><br />
 &emsp;-<a href="https://users23771.azurewebsites.net/api/getallusers">https://functionapp23771.azurewebsites.net/api/getallusers</a><br />
 &emsp;-<a href="https://users23771.azurewebsites.net/api/postusers">https://functionapp23771.azurewebsites.net/api/postusers</a><br />
