@@ -10,8 +10,8 @@ After this, to run the application in VSCode: <br />
 	<p></p>
 
 There is an instance of this application deployed in Azure. These are the endpoints:<br />
-&emsp;-<a href="https://functionapp23771.azurewebsites.net/api/getuserbyid/{id}">https://functionapp23771.azurewebsites.net/api/getuserbyid/{id}</a><br />
-&emsp;-<a href="https://functionapp23771.azurewebsites.net/api/getallusers">https://functionapp23771.azurewebsites.net/api/getallusers</a><br />
-&emsp;-<a href="https://functionapp23771.azurewebsites.net/api/postusers">https://functionapp23771.azurewebsites.net/api/postusers</a><br />
-&emsp;-<a href="https://functionapp23771.azurewebsites.net/api/deleteusers">https://functionapp23771.azurewebsites.net/api/deleteusers</a>
+&emsp;-<a href="https://users23771.azurewebsites.net/api/getuserbyid/{id}">https://functionapp23771.azurewebsites.net/api/getuserbyid/{id}</a><br />
+&emsp;-<a href="https://users23771.azurewebsites.net/api/getallusers">https://functionapp23771.azurewebsites.net/api/getallusers</a><br />
+&emsp;-<a href="https://users23771.azurewebsites.net/api/postusers">https://functionapp23771.azurewebsites.net/api/postusers</a><br />
+&emsp;-<a href="https://users23771.azurewebsites.net/api/deleteusers">https://functionapp23771.azurewebsites.net/api/deleteusers</a>
 
