@@ -45,7 +45,6 @@ public class DAO : IDAO
 	public User getUserById(ObjectId id)
 	{
 		FilterDefinition<User> userFilter = Builders<User>.Filter.Eq(user => user._id, value: id);
-
 		return userCollection.Find<User>(userFilter).FirstOrDefault();
 	}
 
