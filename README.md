@@ -16,8 +16,10 @@ After this, to run the application in VSCode: <br />
 	<p></p>
 
 There is an instance of this application deployed in Azure. These are the web-api endpoints:<br />
-&emsp;-<a href="https://users23771.azurewebsites.net/api/getuserbyid/{id}">https://users23771.azurewebsites.net/api/getuserbyid/{id}</a><br />
-&emsp;-<a href="https://users23771.azurewebsites.net/api/getallusers">https://users23771.azurewebsites.net/api/getallusers</a><br />
-&emsp;-<a href="https://users23771.azurewebsites.net/api/postusers">https://users23771.azurewebsites.net/api/postusers</a><br />
-&emsp;-<a href="https://users23771.azurewebsites.net/api/deleteusers">https://users23771.azurewebsites.net/api/deleteusers</a>
+&emsp;-<a href="https://users23771.azurewebsites.net/api/getuserbyid/{id}">https://users23771.azurewebsites.net/api/getuserbyid/{id}</a> (Get)<br />
+&emsp;-<a href="https://users23771.azurewebsites.net/api/getallusers">https://users23771.azurewebsites.net/api/getallusers</a> (Get)<br />
+&emsp;-<a href="https://users23771.azurewebsites.net/api/postusers">https://users23771.azurewebsites.net/api/postusers</a> (Post)<br />
+&emsp;-<a href="https://users23771.azurewebsites.net/api/deleteusers">https://users23771.azurewebsites.net/api/deleteusers</a> (Delete)<p></p>
+	<p></p>
+ Swagger-UI: <a href="https://users23771.azurewebsites.net/api/swagger/ui">https://users23771.azurewebsites.net/api/swagger/ui</a>
 
