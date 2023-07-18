@@ -68,7 +68,7 @@ namespace PP23771.UserController
 
 		[FunctionName("PostUsers")]
 		[OpenApiOperation(operationId: "PostUsers", tags: new[] { "User" })]
-		[OpenApiRequestBody(contentType: "application/json", bodyType: typeof(List<CreateUserDTO>), Required = true, Description = "Request body")]
+		[OpenApiRequestBody(contentType: "application/json", bodyType: typeof(List<CreateUserDTO>), Required = true, Description = "New users")]
 		[OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "text", bodyType: typeof(bool), Description = "Ok response")]
 		public IActionResult PostUser(
 			    [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = "postusers")] HttpRequest req, ILogger log)
@@ -91,6 +91,7 @@ namespace PP23771.UserController
 
 		[FunctionName("DeleteUsers")]
 		[OpenApiOperation(operationId: "DeleteUsers", tags: new[] { "User" })]
+		[OpenApiRequestBody(contentType: "application/json", bodyType: typeof(List<string>), Required = true, Description = "List of users to delete")]
 		[OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(DeleteResult), Description = "Ok response")]
 		public IActionResult deleteUser(
 			    [HttpTrigger(AuthorizationLevel.Anonymous, "delete", Route = "deleteusers")] HttpRequest req, ILogger log)
