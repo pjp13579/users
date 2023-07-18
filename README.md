@@ -3,10 +3,11 @@ To run this application in VSCode, you have some dependencies:<br />
 &emsp;-Azure Functions extension for VSCode <br />
 &emsp;-.NET Core SDK on the machine <p></p>
 
-Environment variables:
-&emsp;mongodbURI: mongodb database connection string
-&emsp;databaseName: database name
-&emsp;userCollectionName: collection name
+Environment variables:<br />
+&emsp;mongodbURI: mongodb database connection string<br />
+&emsp;databaseName: database name<br />
+&emsp;userCollectionName: collection name<p></p>
+	<p></p>
 
 After this, to run the application in VSCode: <br />
 &emsp;-open the integrated terminal <br />
