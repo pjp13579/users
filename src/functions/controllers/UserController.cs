@@ -43,7 +43,7 @@ namespace PP23771.UserController
 
 		[FunctionName("GetUserById")]
 		[OpenApiOperation(operationId: "getUserById", tags: new[] { "User" })]
-		[OpenApiParameter(name: "userid", In = ParameterLocation.Path, Required = true, Type = typeof(string), Description = "user id")]
+		[OpenApiParameter(name: "id", In = ParameterLocation.Path, Required = true, Type = typeof(string), Description = "user id")]
 		[OpenApiResponseWithBody(statusCode: HttpStatusCode.OK, contentType: "application/json", bodyType: typeof(ViewUserDTO), Description = "Ok response")]
 		[OpenApiResponseWithoutBody(statusCode: HttpStatusCode.NotFound, Description = "User Not Found response")]
 		public IActionResult GetUserById(
